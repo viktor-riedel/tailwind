@@ -5,26 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ['ui-sans-serif', 'system-ui'],
+            serif: ['ui-serif', 'Georgia'],
+            mono: ['ui-monospace', 'SFMono-Regular'],
+          }
+        }
+      }
+    </script>
     <title>Typography</title>
   </head>
   <body>
     <!-- Font Family -->
-
+    <p class="font-sans">test</p>
+    <p class="font-serif">test</p>
+    <p class="font-mono">test</p>
     <!-- Font Size -->
-
+    <div class="mt-2"></div>
+    <div class="text-base">test small</div>
+    <div class="text-xs">test small</div>
+    <div class="text-sm">test small</div>
+    <div class="text-md">test small</div>
+    <div class="text-lg">test small</div>
+    <div class="text-xl">test small</div>
+    <div class="text-2xl">test small</div>
     <!-- Font Weight -->
-
+    <div class="mt-2"></div>
+    <div class="font-light">text</div>
+    <div class="font-normal">text</div>
+    <div class="font-medium">text</div>
+    <div class="font-semibold">text</div>
+    <div class="font-bold">text</div>
     <!-- Letter Spacing -->
-
+    <div class="mt-2"></div>
+    <div class="tracking-tight">text</div>
+    <div class="tracking-normal">text</div>
+    <div class="tracking-wide">text</div>
     <!-- Text Alignment -->
-
+    <div class="mt-2"></div>
+    <div class="text-left">text</div>
+    <div class="text-right">text</div>
+    <div class="text-center">text</div>
     <!-- Text Decoration -->
-
+    <div class="mt-2"></div>
+    <div class="underline decoration-4 decoration-blue-400">text</div>
+    <div class="underline decoration-double decoration-blue-400">text</div>
+    <div class="underline decoration-dotted decoration-blue-400">text</div>
+    <div class="underline decoration-dashed decoration-blue-400">text</div>
+    <div class="underline decoration-wavy decoration-blue-400">text</div>
+    <div class="underline decoration-wavy decoration-blue-400 underline-offset-8">text</div>
     <!-- Decoration Style -->
 
     <!-- Decoration Offset -->
 
     <!-- Text Transform -->
+    <div class="mt-2"></div>
+    <p class="normal-case">test</p>
+    <p class="uppercase">test</p>
+    <p class="lowercase">test</p>
+    <p class="capitalize">test</p>
   </body>
 </html>
 
